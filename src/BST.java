@@ -285,4 +285,10 @@ public class BST<T extends Comparable<T>>
         }
         return minv;
     }
+    
+    public T getData() 
+    {
+    	T data = root.getData();
+    	return data;
+    }
 }

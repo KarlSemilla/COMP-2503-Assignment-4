@@ -18,6 +18,8 @@ public class A4a {
 		"man", "woman", "would", "should", "dont", "after", "before", "im", "men"
    };
 	
+	private BST<Word> words = new BST<Word>();
+	
 	public static void main(String args[]) 
 	{
 		A4a a4 = new A4a();
@@ -31,7 +33,6 @@ public class A4a {
 	
 	public void read() 
 	{
-		BST<Word> words = new BST<Word>();
 		for(int i = 0; i < stopwords.length; i++) {
 			Word s = new Word(stopwords[i]);
 			words.add(s);
@@ -70,7 +71,7 @@ public class A4a {
 	      int i = 0;
 	      while ( i < words.size() && i < n) 
 	      {
-	         System.out.println( words.get(i));
+	         System.out.println(words.getData());
 	         i++;
 	      }
 	   }
